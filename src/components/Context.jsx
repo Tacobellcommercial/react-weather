@@ -7,7 +7,7 @@ export function LocationsContextProvider({children}){
     const [cityData, setCityData] = React.useState("");
 
     function sendCityData(city){
-        return fetch("https://react-weather-api-3ovi.onrender.com", {
+        return fetch("https://react-weather-api-3ovi.onrender.com/city-data", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
