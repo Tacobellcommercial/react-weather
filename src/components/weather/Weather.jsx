@@ -9,7 +9,8 @@ function Weather(){
     function convertToFarenheit(kelvin){
         return Math.round((kelvin-273.15)*(9/5)+32)
     }
-
+    console.log(cityData);
+    console.log(!(cityData.message === "success"));
     return(
             <div className="weather-section">
                 {!(cityData.message === "success") ? <Navigate to="/home"/> :
