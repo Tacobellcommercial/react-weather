@@ -1,0 +1,387 @@
+html{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/*Navbar*/
+
+.navbar-brand{
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    transition: all 0.25s !important;
+}
+
+.navbar-brand:hover{
+    color: gray !important;
+}
+
+/*Input Box*/
+
+.home-section{
+    padding: 7% 15%;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("newyork.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+.input-box{
+    background-color: #fcba03;
+    width: 35%;
+    border-radius: 5px;
+    padding: 3% 5% 3.5% 5%;
+    text-align: center;
+    transition: all 0.25s;
+    transform: translate(-50%, -50%);
+    margin-right: -50%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+.input-box:hover{
+    padding: 4% 5% 4% 5%;
+}
+
+.input-box h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 0.75rem;
+}
+
+.input-box p{
+    font-size: 1rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+}
+
+.input-box input{
+    box-shadow: 0px 17px 25px 0px rgba(0,0,0,0.27);
+    border-radius: 5px;
+    padding: 1.5%;
+    font-size: 1rem;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 700;
+    border: none;
+    transition: all 0.25s;
+    width: 70%;
+}
+
+.input-box input:focus{
+    padding: 2.5%;
+    outline: none;
+}
+
+.input-box button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+.error-message{
+    font-size: 1rem;
+    color: red;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+}
+
+
+@media (max-width: 1000px){
+    .input-box{
+        width: 40%;
+        padding: 5% 5% 7% 5%;
+    }
+    .input-box:hover{
+        padding: 6% 5% 7.5% 5%;
+
+    }
+}
+
+@media (max-width: 850px){
+    .input-box h2{
+        font-size: 1.75rem;
+    }
+    
+    .input-box input{
+        padding: 1%;
+    }
+}
+
+@media (max-width: 700px){
+    .input-box{
+        width: 50%;
+    }
+
+    .input-box button{
+        width: 70%;
+    }
+
+    .error-message{
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 530px){
+
+    .input-box{
+        width: 58%;
+    }
+
+    .input-box h2{
+        margin-bottom: 0.75rem;
+    }
+
+    .input-box button{
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 450px){
+    .input-box h2{
+        font-size: 1.5rem;
+    }
+
+    .input-box p{
+        font-size: 0.75rem;
+    }
+
+    .input-box input, .input-box button{
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 350px){
+    .input-box p{
+        font-size: 0.7rem;
+    }
+}
+
+/*WEATHER INFORMATION*/
+
+
+.weather-section{
+    padding: 0% 15%;
+}
+
+.outer-container-weather{
+    padding: 5%;
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.weather-specifics{
+    background-color: gray;
+    width: 100%;
+    padding: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+
+.weather-specifics h2{
+    background-color: white;
+    padding: 2%;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin: 3.5%;
+    transition: all 0.25s;
+}
+
+.weather-specifics h2:hover{
+    padding: 2.5%;
+}
+
+@media (max-width: 1300px){
+    .outer-container-weather h1{
+        font-size: 1.75rem;
+    }
+
+    .weather-specifics h2{
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 1100px){
+    .outer-container-weather{
+        width: 58%;
+    }
+
+
+}
+
+@media (max-width: 800px){
+    .outer-container-weather{
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px){
+
+    .outer-container-weather{
+        width: 80%;
+    }
+
+    .outer-container-weather h1{
+        font-size: 1.5rem;
+    }
+    
+    .weather-specifics h2{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px){
+    .outer-container-weather{
+        width: 87%;
+    }
+
+    .outer-container-weather h1{
+        font-size: 1.3rem;
+    }
+}
+
+
+/* FEATURES SECTION */
+
+.features-section{
+    text-align: center;
+    padding: 7% 15%;
+}
+
+.features-section h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    margin-bottom: 5%;
+}
+
+.features-section i{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    transition: color 0.25s;
+}
+
+.features-section i:hover{
+    color: gray;
+}
+
+.features-section h2{
+    font-family: "Roboto Mono", sans-serif;
+    font-weight: 700;
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.features-section p{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    color: gray;
+}
+
+.credits{
+    margin-top: 5%;
+}
+
+.credits img{
+    width: 7%;
+    border-radius: 50%;
+}
+
+.credits p{
+    width: 15%;
+    font-size: 1rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+}
+
+.credits .sub-text{
+    color: green;
+}
+
+@media (max-width: 1600px){
+
+    .features-section h2{
+        font-size: 2rem;
+    }
+
+    .features-section p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1300px){
+
+    .features-section h2{
+        font-size: 1.7rem;
+    }
+
+    .features-section p{
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 991px){
+
+    .features-section h2{
+        font-size: 2.25rem;
+    }
+
+    .features-section p{
+        font-size: 1.25rem;
+    }
+
+    .credits p{
+        width: 35%;
+        margin-top: 1rem;
+    }
+
+    .credits img{
+        width: 13%;
+    }
+}
+
+@media (max-width: 700px){
+    .credits p{
+        width: 50%;
+    }
+}
+
+@media (max-width: 550px){
+
+    .features-section h1{
+        margin-bottom: 3rem;
+    }
+
+    .features-section h2{
+        font-size: 2rem;
+    }
+
+    .features-section p{
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .credits img{
+        width: 17%;
+    }
+}
+
+@media (max-width: 400px){
+    .credits p{
+        max-width: 100%;
+    }
+}
